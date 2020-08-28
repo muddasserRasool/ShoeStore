@@ -27,9 +27,9 @@ export default function Webswitch() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/Product"> <Product /> </Route>
-          <Route path="/ProductItem"> <ProductItem /> </Route>
+          <Route path="/Product/:id"> <ProductItem /> </Route>
           <Route exact path="/"> <Home /> </Route>
-          <Route path="/*"> <h2>404 Page not found</h2> </Route>
+          <Route path="*"> <h2>404 Page not found</h2> </Route>
         </Switch>
       </div>
     </Router>

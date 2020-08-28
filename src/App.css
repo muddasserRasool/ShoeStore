@@ -35,11 +35,14 @@
     
   }
 
-  .shoeproduct div{
-  text-align: center;
+  .shoeproduct > .link{
+    text-align: center;
     width: 300px;
     box-shadow: 0 0 10px #463636;
     margin: 10px;
+  }
+  .shoeproduct > .link:hover{
+    background-color: lightgray;
   }
 
   .productchoose{

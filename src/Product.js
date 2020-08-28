@@ -1,6 +1,7 @@
 import React from "react";
 import shoes from './shoe.json';
 import './App.css';
+import { Link } from "react-router-dom";
 
 export default function Product() {
   
@@ -10,10 +11,10 @@ export default function Product() {
    <div className="shoeproduct">
   {Object.keys(shoes).map(key =>{
     return(
-      <div key={key} >
+      <Link key={key} to={'/Product/${key}'} className="link" >
       <h3>{shoes[key].name}</h3>
       <img src= {shoes[key].img} height={150} alt="showimage" ></img>
-      </div>
+      </Link>
     );
   })
   }
