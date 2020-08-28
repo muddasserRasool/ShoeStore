@@ -12,21 +12,21 @@ export default function Webswitch() {
         <nav className="NavBar">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">About</Link>
             </li>
             <li>
               <Link to="/Product">Product</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/ProductItem">ProductItem</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/Product"> <Product /> </Route>
+          <Route exact path="/Product"> <Product /> </Route>
           <Route path="/Product/:id"> <ProductItem /> </Route>
           <Route exact path="/"> <Home /> </Route>
           <Route path="*"> <h2>404 Page not found</h2> </Route>

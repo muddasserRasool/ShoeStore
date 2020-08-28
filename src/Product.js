@@ -9,11 +9,12 @@ export default function Product() {
    <div> 
      <h2 className="productchoose">Please Choose any Product</h2>
    <div className="shoeproduct">
-  {Object.keys(shoes).map(key =>{
+  {Object.keys(shoes).map(shoekey =>{
     return(
-      <Link key={key} to={'/Product/${key}'} className="link" >
-      <h3>{shoes[key].name}</h3>
-      <img src= {shoes[key].img} height={150} alt="showimage" ></img>
+      
+      <Link to={`/Product/${shoekey}`} key={shoekey} className="link" >
+      <h3>{shoes[shoekey].name}</h3>
+      <img src= {shoes[shoekey].img} height={150} alt="showimage" ></img>
       </Link>
     );
   })

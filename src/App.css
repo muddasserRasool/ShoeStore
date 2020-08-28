@@ -33,6 +33,7 @@
     flex-wrap: wrap;
     margin: 20px;
     
+    
   }
 
   .shoeproduct > .link{
@@ -43,14 +44,34 @@
   }
   .shoeproduct > .link:hover{
     background-color: lightgray;
+    box-shadow: 0 0 10px #463636;
   }
 
   .productchoose{
-    margin: 30px;
+    margin: 0px;
+    display: block;
+    box-shadow: 0 0 10px #463636;
+    height: 40px;
+    
+    
+  }
+
+  .productitem{
+    display: block;
     text-align: center;
   }
 
+  .productitem img{
+    box-shadow: 0 0 10px #463636;
+  }
 
+  .welcome{
+    margin: 0px;
+    display: block;
+    box-shadow: 0 0 10px #463636;
+    height: 40px;
+    
+  }
  
 
 
