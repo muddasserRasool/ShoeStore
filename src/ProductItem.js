@@ -14,7 +14,7 @@ export default function ProductItem() {
       <h2 className="welcome"> This page is to view product in detail</h2>
     <div className="productitem">
       <h3>{shoes[id].name}</h3>
-      <img src={shoes[id].img} height={550} alt="shoe"></img>
+      <img src={shoes[id].img} height={450} alt="shoe"></img>
     </div>
     </div>
 
